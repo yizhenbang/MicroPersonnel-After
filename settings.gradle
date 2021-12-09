@@ -1,0 +1,3 @@
+rootProject.name = 'MicroPersonnel-After'
+include 'MicroPersonnel-Common'
+
