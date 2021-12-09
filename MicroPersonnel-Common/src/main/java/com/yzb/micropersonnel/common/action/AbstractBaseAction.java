@@ -30,7 +30,7 @@ public abstract class AbstractBaseAction {
         binder.registerCustomEditor(java.util.Date.class, new PropertyEditorSupport(){
             @Override
             public void setAsText(String text) throws IllegalArgumentException {
-                LocalDateTime dateTime = LocalDateTime.parse(text);
+                LocalDateTime dateTime = LocalDateTime.parse(text,DATETIME_FORMATTER);
                 Instant instant = dateTime.atZone(ZoneId.systemDefault()).toInstant();
                 super.setValue(Date.from(instant));
             }
