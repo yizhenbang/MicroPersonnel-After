@@ -122,3 +122,12 @@ project(':jwt-starter'){
         compile(libraries.'javax.servlet-api')
     }
 }
+project(':jwt-token-server-9745'){
+    dependencies {
+        implementation(project(':MicroPersonnel-Common'))
+        implementation(libraries.'druid-spring-boot-starter')
+        implementation(libraries.'mybatis-plus-boot-starter')
+        implementation(libraries.'mysql-connector-java')
+        implementation(libraries.'spring-boot-starter-aop')
+    }
+}

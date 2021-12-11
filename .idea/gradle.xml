@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/MicroPersonnel-Common" />
             <option value="$PROJECT_DIR$/MicroPersonnel-Web" />
             <option value="$PROJECT_DIR$/jwt-starter" />
+            <option value="$PROJECT_DIR$/jwt-token-server-9745" />
           </set>
         </option>
       </GradleProjectSettings>

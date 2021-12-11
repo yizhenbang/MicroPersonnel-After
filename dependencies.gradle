@@ -7,6 +7,10 @@ ext.versions = [    // 定义所有要使用的版本号
                     jjwt                        : '0.9.1',
                     jaxb                        : '2.3.0',
                     servletApi                  : '4.0.1',
+                    druidSpringBootStarter      : '1.2.8',
+                    mybatisPlus                 : '3.4.3',
+                    mysql                       : '8.0.20',
+                    aop                         : '2.6.1',
 ]
 ext.libraries = [
         // SpringBoot 核心依赖库
@@ -25,5 +29,13 @@ ext.libraries = [
         'jaxb-api'                  : "javax.xml.bind:jaxb-api:${versions.jaxb}",
         'jaxb-impl'                 : "com.sun.xml.bind:jaxb-impl:${versions.jaxb}",
         'jaxb-core'                 : "com.sun.xml.bind:jaxb-core:${versions.jaxb}",
-        'javax.servlet-api'         : "javax.servlet:javax.servlet-api:${versions.servletApi}"
+        'javax.servlet-api'         : "javax.servlet:javax.servlet-api:${versions.servletApi}",
+        // druid
+        'druid-spring-boot-starter' : "com.alibaba:druid-spring-boot-starter:${versions.druidSpringBootStarter}",
+        // MyBatis-Plus
+        'mybatis-plus-boot-starter' : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatisPlus}",
+        // MySQL
+        'mysql-connector-java'      : "mysql:mysql-connector-java:${versions.mysql}",
+        // AOP
+        'spring-boot-starter-aop'   : "org.springframework.boot:spring-boot-starter-aop:${versions.aop}"
 ]

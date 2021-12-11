@@ -2,4 +2,5 @@ rootProject.name = 'MicroPersonnel-After'
 include 'MicroPersonnel-Common'
 include 'MicroPersonnel-Web'
 include 'jwt-starter'
+include 'jwt-token-server-9745'
 

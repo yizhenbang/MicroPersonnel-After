@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: jwt.token.server
+  personnel:
+    datasource:
+      username: root
+      password: accp
+      url: jdbc:mysql://localhost:3306/personnel?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      druid:
+        initial-size: 1 # 初始连接池大小
+        min-idle: 10 #最小维持到连接池大小
+        max-active: 50 #最大可提供的连接数量
+        max-wait: 2000 #最长到等待时间
+        time-between-eviction-runs-millis: 6000 #关闭空闲连接的间隔（毫秒）
+        min-evictable-idle-time-millis: 3000 #连接到最小生存时间
+        validation-query: select 1 from dual #验证查询，数据库的状态检测
+        test-while-idle: true # 测试连接是否可用
+        test-on-borrow: false #在获得连接之前是否要进行测试
+        test-on-return: false #在返回之前是否要进行测试
+        stat:
+          merge-sql: true # 合并SQL
+          log-slow-sql: true # 记录慢SQL
+          slow-sql-Millis: 2000 # 慢SQL的执行标准
