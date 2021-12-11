@@ -1,4 +1,4 @@
-package com.yzb.jwt.tokenserver.datasource.druid;
+package com.yzb.jwt.tokenserver.datasource.config.druid;
 
 import com.alibaba.druid.filter.Filter;
 import com.alibaba.druid.filter.logging.Slf4jLogFilter;
