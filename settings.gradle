@@ -1,3 +1,5 @@
 rootProject.name = 'MicroPersonnel-After'
 include 'MicroPersonnel-Common'
+include 'MicroPersonnel-Web'
+include 'jwt-starter'
 

@@ -1,0 +1,14 @@
+com:
+  yzb:
+    security:
+      jwt:
+        issuer: 小易
+        expire: 3000
+        reset: com.yzb
+        sing: ZhenBangYi
+        pwd:
+          repeat: 5
+          salt: xiaoyi
+spring:
+  application:
+    name: jwt-starter

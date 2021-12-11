@@ -2,7 +2,11 @@ ext.versions = [    // 定义所有要使用的版本号
                     springboot                  : '2.5.3',// SpringBoot版本号
                     junit                       : '5.7.1',
                     junitPlatformLauncher       : '1.7.1',
-                    lombok                      : '1.18.18'
+                    lombok                      : '1.18.18',
+                    commonsCodec                : '1.15',
+                    jjwt                        : '0.9.1',
+                    jaxb                        : '2.3.0',
+                    servletApi                  : '4.0.1',
 ]
 ext.libraries = [
         // SpringBoot 核心依赖库
@@ -15,4 +19,11 @@ ext.libraries = [
         'junit-platform-launcher'   : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
         // Lombok
         'lombok'                    : "org.projectlombok:lombok:${versions.lombok}",
+        // JWT
+        'commons-codec'             : "commons-codec:commons-codec:${versions.commonsCodec}",
+        'jjwt'                      : "io.jsonwebtoken:jjwt:${versions.jjwt}",
+        'jaxb-api'                  : "javax.xml.bind:jaxb-api:${versions.jaxb}",
+        'jaxb-impl'                 : "com.sun.xml.bind:jaxb-impl:${versions.jaxb}",
+        'jaxb-core'                 : "com.sun.xml.bind:jaxb-core:${versions.jaxb}",
+        'javax.servlet-api'         : "javax.servlet:javax.servlet-api:${versions.servletApi}"
 ]

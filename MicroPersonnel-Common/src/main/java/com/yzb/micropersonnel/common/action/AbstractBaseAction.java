@@ -21,7 +21,7 @@ import java.util.Date;
  * @since JDK 1.8
  */
 public abstract class AbstractBaseAction {
-    @Value("${yzb.date.pattern?'yyyy-MM-dd HH:mm:ss'}")
+    @Value("${yzb.date.pattern?:'yyyy-MM-dd HH:mm:ss'}")
     private String DATETIME_PATTERN;
     private final DateTimeFormatter DATETIME_FORMATTER = DateTimeFormatter.ofPattern(DATETIME_PATTERN);
 

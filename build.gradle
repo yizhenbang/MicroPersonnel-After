@@ -105,3 +105,20 @@ project(':MicroPersonnel-Common'){
         compile('org.springframework.boot:spring-boot-starter-web')
     }
 }
+project(':MicroPersonnel-Web'){
+    dependencies {
+        implementation(project(':MicroPersonnel-Common'))
+    }
+}
+project(':jwt-starter'){
+    dependencies {
+        implementation(project(':MicroPersonnel-Common'))
+        implementation('org.springframework.boot:spring-boot-configuration-processor')
+        implementation(libraries.'commons-codec')
+        compile(libraries.'jjwt')
+        compile(libraries.'jaxb-api')
+        compile(libraries.'jaxb-impl')
+        compile(libraries.'jaxb-core')
+        compile(libraries.'javax.servlet-api')
+    }
+}
